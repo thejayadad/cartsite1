@@ -11,7 +11,7 @@ const ProductSchema = new mongoose.Schema({
     },
     category: {
         type: String,
-        enum: ['hot', 'filled', 'glazed', 'custom'],
+        enum: ['hot', 'filled', 'glazed', 'custom', 'sprinkle'],
         required: true,
     },
     price: {

@@ -6,7 +6,8 @@ import ProductItem from '../Product/ProductItem'
 const ShowCase = ({products}) => {
   return (
     <section className='px-4 py-24'>
-        <div className='flex lg:flex-row justify-between md:flex-col sm:flex-col sm:gap-24 items-center md:gap-24'>
+      <h2 className='text-center text-4xl mb-12'>Featured Donuts</h2>
+      <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 justify-center'>
         {products?.map((product) => (
             <ProductItem key={product._id} product={product} />
         ))}
